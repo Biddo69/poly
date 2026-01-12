@@ -1,0 +1,165 @@
+<svg viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sfondo con gradiente radiale -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#B8E6F5"/>
+      <stop offset="100%" style="stop-color:#5BA5C8"/>
+    </radialGradient>
+    <radialGradient id="face" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#FFB84D"/>
+      <stop offset="100%" style="stop-color:#FF9500"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="900" height="900" fill="url(#bg)"/>
+  
+  <!-- Raggi di luce -->
+  <polygon points="450,0 480,450 520,450" fill="#A8D5E8" opacity="0.3"/>
+  <polygon points="900,200 450,420 450,480" fill="#A8D5E8" opacity="0.3"/>
+  <polygon points="0,200 450,420 450,480" fill="#A8D5E8" opacity="0.3"/>
+  
+  <!-- Nuvole stilizzate -->
+  <g opacity="0.95">
+    <ellipse cx="180" cy="180" rx="70" ry="40" fill="#FFFEF0"/>
+    <ellipse cx="230" cy="170" rx="60" ry="45" fill="#FFFEF0"/>
+    <ellipse cx="140" cy="190" rx="55" ry="35" fill="#FFFEF0"/>
+    <rect x="140" y="180" width="90" height="35" fill="#FFFEF0"/>
+    
+    <ellipse cx="720" cy="200" rx="75" ry="45" fill="#FFFEF0"/>
+    <ellipse cx="770" cy="190" rx="65" ry="50" fill="#FFFEF0"/>
+    <ellipse cx="670" cy="210" rx="60" ry="38" fill="#FFFEF0"/>
+    <rect x="670" y="190" width="100" height="40" fill="#FFFEF0"/>
+    
+    <ellipse cx="160" cy="520" rx="65" ry="38" fill="#FFFEF0"/>
+    <ellipse cx="210" cy="515" rx="60" ry="42" fill="#FFFEF0"/>
+    <ellipse cx="115" cy="530" rx="50" ry="32" fill="#FFFEF0"/>
+    <rect x="115" y="515" width="95" height="35" fill="#FFFEF0"/>
+    
+    <ellipse cx="740" cy="600" rx="70" ry="42" fill="#FFFEF0"/>
+    <ellipse cx="790" cy="595" rx="60" ry="45" fill="#FFFEF0"/>
+    <ellipse cx="690" cy="610" rx="55" ry="35" fill="#FFFEF0"/>
+    <rect x="690" y="595" width="100" height="38" fill="#FFFEF0"/>
+  </g>
+  
+  <!-- Testa principale (forma più precisa) -->
+  <ellipse cx="450" cy="340" rx="190" ry="210" fill="#A01010" stroke="#7D0000" stroke-width="4"/>
+  
+  <!-- Antenne -->
+  <line x1="420" y1="135" x2="415" y2="85" stroke="#A01010" stroke-width="12" stroke-linecap="round"/>
+  <line x1="415" y1="85" x2="405" y2="80" stroke="#A01010" stroke-width="12" stroke-linecap="round"/>
+  <line x1="415" y1="85" x2="425" y2="80" stroke="#A01010" stroke-width="12" stroke-linecap="round"/>
+  
+  <line x1="480" y1="135" x2="485" y2="85" stroke="#A01010" stroke-width="12" stroke-linecap="round"/>
+  <line x1="485" y1="85" x2="475" y2="80" stroke="#A01010" stroke-width="12" stroke-linecap="round"/>
+  <line x1="485" y1="85" x2="495" y2="80" stroke="#A01010" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Viso arancione -->
+  <ellipse cx="450" cy="320" rx="145" ry="160" fill="url(#face)"/>
+  
+  <!-- Occhiali - lente sinistra -->
+  <ellipse cx="380" cy="310" rx="65" ry="70" fill="#FFFFFF" stroke="#A01010" stroke-width="10"/>
+  
+  <!-- Occhiali - lente destra -->
+  <ellipse cx="520" cy="310" rx="65" ry="70" fill="#FFFFFF" stroke="#A01010" stroke-width="10"/>
+  
+  <!-- Ponte occhiali -->
+  <rect x="440" y="305" width="20" height="10" fill="#A01010" rx="2"/>
+  
+  <!-- Stanghette occhiali -->
+  <polyline points="315,305 275,300 265,298" fill="none" stroke="#A01010" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="315" cy="305" r="8" fill="#A01010"/>
+  
+  <polyline points="585,305 625,300 635,298" fill="none" stroke="#A01010" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="585" cy="305" r="8" fill="#A01010"/>
+  
+  <!-- Pupille -->
+  <circle cx="380" cy="310" r="25" fill="#8B0000"/>
+  <circle cx="385" cy="305" r="12" fill="#FFFFFF"/>
+  
+  <circle cx="520" cy="310" r="25" fill="#8B0000"/>
+  <circle cx="525" cy="305" r="12" fill="#FFFFFF"/>
+  
+  <!-- Naso piccolo -->
+  <polygon points="450,370 445,385 450,390 455,385" fill="#E68A00" stroke="#D67800" stroke-width="2"/>
+  
+  <!-- Bocca grande magenta -->
+  <ellipse cx="450" cy="520" rx="150" ry="95" fill="#FF00FF"/>
+  <ellipse cx="450" cy="520" rx="148" ry="93" fill="none" stroke="#D000D0" stroke-width="4"/>
+  
+  <!-- Linea centrale bocca -->
+  <path d="M 300,520 Q 450,545 600,520" fill="none" stroke="#A01010" stroke-width="4"/>
+  
+  <!-- Ombra bocca superiore -->
+  <ellipse cx="450" cy="490" rx="130" ry="25" fill="#D000D0" opacity="0.3"/>
+  
+  <!-- Barba che parte dalle labbra -->
+  <g>
+    <!-- Barba sinistra - parte dal bordo sinistro della bocca -->
+    <path d="M 300,520 Q 260,530 240,550 Q 220,580 230,610 Q 245,640 280,660 L 300,615 Z" 
+          fill="#8B0000" stroke="#660000" stroke-width="3"/>
+    
+    <!-- Elementi pelosi sinistra -->
+    <circle cx="270" cy="540" r="20" fill="#660000"/>
+    <circle cx="245" cy="570" r="22" fill="#660000"/>
+    <circle cx="240" cy="600" r="20" fill="#660000"/>
+    <circle cx="255" cy="630" r="22" fill="#660000"/>
+    <circle cx="275" cy="650" r="20" fill="#660000"/>
+    
+    <circle cx="260" cy="555" r="16" fill="#4D0000"/>
+    <circle cx="250" cy="585" r="18" fill="#4D0000"/>
+    <circle cx="248" cy="615" r="16" fill="#4D0000"/>
+    <circle cx="265" cy="640" r="18" fill="#4D0000"/>
+  </g>
+  
+  <!-- Barba destra -->
+  <g>
+    <!-- Barba destra - parte dal bordo destro della bocca -->
+    <path d="M 600,520 Q 640,530 660,550 Q 680,580 670,610 Q 655,640 620,660 L 600,615 Z" 
+          fill="#8B0000" stroke="#660000" stroke-width="3"/>
+    
+    <!-- Elementi pelosi destra -->
+    <circle cx="630" cy="540" r="20" fill="#660000"/>
+    <circle cx="655" cy="570" r="22" fill="#660000"/>
+    <circle cx="660" cy="600" r="20" fill="#660000"/>
+    <circle cx="645" cy="630" r="22" fill="#660000"/>
+    <circle cx="625" cy="650" r="20" fill="#660000"/>
+    
+    <circle cx="640" cy="555" r="16" fill="#4D0000"/>
+    <circle cx="650" cy="585" r="18" fill="#4D0000"/>
+    <circle cx="652" cy="615" r="16" fill="#4D0000"/>
+    <circle cx="635" cy="640" r="18" fill="#4D0000"/>
+  </g>
+  
+  <!-- Barba inferiore - connessa alla bocca -->
+  <g>
+    <!-- Forma che collega le due parti laterali passando sotto la bocca -->
+    <path d="M 280,660 Q 340,680 450,685 Q 560,680 620,660" 
+          fill="#8B0000" stroke="#660000" stroke-width="3"/>
+    
+    <!-- Parte che sale verso la bocca -->
+    <ellipse cx="450" cy="615" rx="155" ry="70" fill="#8B0000" stroke="#660000" stroke-width="3"/>
+    
+    <circle cx="310" cy="665" r="18" fill="#660000"/>
+    <circle cx="350" cy="677" r="20" fill="#660000"/>
+    <circle cx="390" cy="682" r="18" fill="#660000"/>
+    <circle cx="450" cy="685" r="20" fill="#660000"/>
+    <circle cx="510" cy="682" r="18" fill="#660000"/>
+    <circle cx="550" cy="677" r="20" fill="#660000"/>
+    <circle cx="590" cy="665" r="18" fill="#660000"/>
+    
+    <circle cx="330" cy="670" r="14" fill="#4D0000"/>
+    <circle cx="370" cy="680" r="15" fill="#4D0000"/>
+    <circle cx="420" cy="684" r="14" fill="#4D0000"/>
+    <circle cx="480" cy="684" r="14" fill="#4D0000"/>
+    <circle cx="530" cy="680" r="15" fill="#4D0000"/>
+    <circle cx="570" cy="670" r="14" fill="#4D0000"/>
+    
+    <!-- Elementi superiori che toccano la bocca -->
+    <circle cx="320" cy="580" r="18" fill="#660000"/>
+    <circle cx="360" cy="600" r="20" fill="#660000"/>
+    <circle cx="410" cy="610" r="18" fill="#660000"/>
+    <circle cx="490" cy="610" r="18" fill="#660000"/>
+    <circle cx="540" cy="600" r="20" fill="#660000"/>
+    <circle cx="580" cy="580" r="18" fill="#660000"/>
+  </g>
+</svg>
